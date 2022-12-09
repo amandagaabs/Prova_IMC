@@ -1,6 +1,7 @@
 <mat-card class="container">
     <mat-card-header>
       <mat-card-title>Cadastrar IMC</mat-card-title>
+      <br> <br/>
     </mat-card-header>
     <mat-card-content>
       <!-- <mat-form-field *ngIf="id" class="input" id="id">
@@ -9,14 +10,23 @@
       </mat-form-field> -->
       <mat-form-field class="input" id="peso">
         <mat-label for="peso">Seu peso:</mat-label>
+        <br> <br/>
         <input matInput type="text" name="peso" [(ngModel)]="peso" />
       </mat-form-field>
+      <br> <br/>
       <mat-form-field class="input" id="altura">
+        <br> <br/>
         <mat-label for="altura">Sua altura:</mat-label>
+        <br> <br/>
         <input matInput type="text" name="altura" [(ngModel)]="altura" />
       </mat-form-field>
+      <br> <br/>
+
       <mat-form-field id="usuario" class="input">
+        <br> <br/>
         <mat-label for="usuario">Nome do usuário</mat-label>
+        <br> <br/>
+
         <mat-select [(ngModel)]="usuarioId">
           <mat-option *ngFor="let usuario of usuarios" value="{{ usuario.id }}">
             {{ usuario.nome }}
