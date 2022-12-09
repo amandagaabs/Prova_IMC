@@ -1,4 +1,4 @@
-POST https://localhost:5001/API/imc/cadastrar
+POST https://localhost:5001/API/Imc/cadastrar
 Content-Type: application/json
 
 {
