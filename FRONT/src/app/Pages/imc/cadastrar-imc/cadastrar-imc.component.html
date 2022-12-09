@@ -9,24 +9,22 @@
         <input disabled="" matInput type="number" name="id" [(ngModel)]="id" />
       </mat-form-field> -->
       <mat-form-field class="input" id="peso">
+        <p> 
         <mat-label for="peso">Seu peso:</mat-label>
-        <br> <br/>
+      </p>
         <input matInput type="text" name="peso" [(ngModel)]="peso" />
       </mat-form-field>
-      <br> <br/>
       <mat-form-field class="input" id="altura">
-        <br> <br/>
+        <p> 
         <mat-label for="altura">Sua altura:</mat-label>
-        <br> <br/>
+        </p> 
         <input matInput type="text" name="altura" [(ngModel)]="altura" />
       </mat-form-field>
-      <br> <br/>
 
       <mat-form-field id="usuario" class="input">
-        <br> <br/>
+        <p> 
         <mat-label for="usuario">Nome do usuário</mat-label>
-        <br> <br/>
-
+      </p> 
         <mat-select [(ngModel)]="usuarioId">
           <mat-option *ngFor="let usuario of usuarios" value="{{ usuario.id }}">
             {{ usuario.nome }}
